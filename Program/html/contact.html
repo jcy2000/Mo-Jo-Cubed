@@ -3,7 +3,7 @@
     <head>
         <title>Home Page</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="../css/css.css">
     </head>
 
     <body>
@@ -12,8 +12,8 @@
                     <a href="home.html">Home</a>
                     <a href="table.html">Main Table</a>
                     <a href="visual.html">Visualization</a>
-                    <a class="active" href="about.html">About us</a>
-                    <a href="contact.html">Contact us</a>
+                    <a href="about.html">About us</a>
+                    <a class="active" href="contact.html">Contact us</a>
                     <a href="support.html">Support us</a>
                     <a href="https://github.com/jcy2000/Mo-Jo-Cubed" target="_blank">Our GitHub</a> <br>
             </div>
@@ -48,10 +48,36 @@
             
             
             <div class="main">
-                <div id="parameter-column" class="column">
-                    <h2>Placeholder</h2>
-                    <p>TODO</p>
-                    <p>Do stuff with this page!</p>
+                <div class="contact">
+                    <h2>How can we help?</h2>
+                    <form class="contact-form">
+                        <div class="contact-info">
+                            <div class="name" style="margin: 1%;">
+                                <span>First name</span> <br>
+                                <input type="text" id="fname">
+                            </div>
+
+                            <div class="name">
+                                <span>Last name</span> <br>
+                                <input type="text" id="lname">
+                            </div>
+
+                            <div class="email">
+                                <span>Email</span> <br>
+                                <input type="text" id="email">
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <span>Message</span> <br>
+                            <textarea></textarea> <br>
+                            
+                            <span>Addtional Comments</span>
+                            <textarea></textarea> <br>
+                        </div>
+
+                        <input class="submit" type="submit" value="Send Message">
+                    </form>
                 </div>
             </div>
         </div>
