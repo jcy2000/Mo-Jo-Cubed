@@ -8,6 +8,7 @@ body {
 .topnav {
     overflow: hidden;
     background: #2b4c5f;
+    z-index: 1; /* Stay on top */
   }
 
 /* Style the links inside the navigation bar */
@@ -116,10 +117,11 @@ body {
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0;
+  padding-left: 10px;
 }
 
 /*==============================About===============================*/
+/*Centers the text of our story*/
 .about {
   display: block;
   margin: auto;
