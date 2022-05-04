@@ -116,7 +116,7 @@ body {
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0;
+  padding-left: 10px;
 }
 
 /*==============================About===============================*/
