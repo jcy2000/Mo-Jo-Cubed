@@ -1,9 +1,5 @@
 body {
-	width: 100%; /* added width 100% to all parent div classes for the table; body, main, column */
   margin: 0;
-	overflow-x: hidden;
-	background-color: #e8e8e8; 
-	height: 123vh;
 }
 
 /*============================Top Navigation================================*/
@@ -119,59 +115,87 @@ body {
 
 /* Style page content */
 .main {
-	width: 100% - 160px;
   margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 10px 10px;
+  padding-left: 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/*==============================About===============================*/
+.about {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
-hr.divider { /* this is the line on the sidenav; see main table page and table.html */
-	border: 0;
-  height: 5px;
-	width: 100%;
-  background-image: linear-gradient(to left, #000000, #008cff, #000000);
+.about h3 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 50%;
 }
 
-#reviews, #games, #owns, #users, #votes { /* the other tables will inherit everything from reviews */
-	border-collapse: collapse;
-	width: 100%;
-	border: none;
-	table-layout: fixed;
-	margin: 15px 0px;
+.about p {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
-#reviews, th{ /* table header */
-	background-color: #459ef2;
-	border: 1px solid #459ef2;
-	text-align: center;
-	padding: 10px 0px;
+
+.about img {
+  width: 100%;
+  height: 750px;
+  margin: 0;
 }
-#reviews, th.tName { /* table header table name */
-	font-size: 36px;
-	padding: 10px 0px;
+
+/*==========================Contact Page============================*/
+.contact h2 {
+  display: block;
+  margin: auto;
+  width: 400px;
+  text-align: center;
 }
-#reviews, th.cName { /* table header column name */
-	font-size: 28px;
-	border-bottom: 3px solid black;
-	padding: 10px 0px;
+
+.contact-form {
+  display: block;
+  margin: auto;
+  width: 500px;
 }
-#reviews, tr { /* table row */
-	border: 0;
-	background-color: #cce6ff;
+
+.contact-info div {
+  margin: 1%;
+  float: left;
 }
-#reviews, td { /* table cell */
-	border: 1px solid black;
-	font-size: 24px;
+
+.contact-info div span {
+  float: left;
 }
-#reviews, #games, #owns, #users, #votes, tr:nth-child(odd) {
-	background-color: #e5f3ff;
+
+.contact-info div input {
+  float: left;
+  height: 20px;
 }
-div.a { /* a div element for formatting text; used in the main table page */
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
+
+.name {
+  width:48%;
 }
+
+.email {
+  width: 98%;
+}
+
+.email input {
+  width: 86%;
+}
+
+.message {
+  margin: 1%;
+}
+
+.message textarea {
+  width: 86%;
+  height: 100px;
+  text-align: left;
+}
+
+.submit {
+  margin: 1%;
+  width: 86%;
+}
+
