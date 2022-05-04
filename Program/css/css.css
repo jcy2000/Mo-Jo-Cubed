@@ -199,3 +199,42 @@ body {
   width: 86%;
 }
 
+hr.divider { /* this is the line on the sidenav; see main table page and table.html */
+	border: 0;
+  height: 5px;
+	width: 100%;
+  background-image: linear-gradient(to left, #000000, #008cff, #000000);
+}
+
+#reviews, #games, #owns, #users, #votes { /* the other tables will inherit everything from reviews */
+	border-collapse: collapse;
+	width: 100%;
+	border: none;
+	table-layout: fixed;
+	margin: 15px 0px;
+}
+#reviews, th{ /* table header */
+	background-color: #459ef2;
+	border: 1px solid #459ef2;
+	text-align: center;
+	padding: 10px 0px;
+}
+#reviews, th.tName { /* table header table name */
+	font-size: 36px;
+	padding: 10px 0px;
+}
+#reviews, th.cName { /* table header column name */
+	font-size: 28px;
+	border-bottom: 3px solid black;
+	padding: 10px 0px;
+}
+#reviews, tr { /* table row */
+	border: 0;
+	background-color: #cce6ff;
+}
+#reviews, td { /* table cell */
+	border: 1px solid black;
+	font-size: 24px;
+}
+#reviews, #games, #owns, #users, #votes, tr:nth-child(odd) {
+	background-color: #e5f3ff;
